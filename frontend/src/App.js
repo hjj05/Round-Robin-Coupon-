@@ -9,11 +9,12 @@ const App = () => {
     try {
       console.log("Claim button clicked!"); // ✅ Debugging
 
-      const response = await fetch("http://localhost:5000/claim", {
-        method: "POST",
+      const response = await fetch("https://coupouns-backend-j1n0z4n3w-hiral-jains-projects.vercel.app/claim", { 
+        method: "POST", 
         credentials: "include",
         headers: { "Content-Type": "application/json" },
       });
+      
 
       console.log("Response received:", response); // ✅ Debugging
 
